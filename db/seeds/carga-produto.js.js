@@ -4,8 +4,8 @@
  */
 exports.seed = async function(knex) {
   // Deletes ALL existing entries
-  await knex('table_name').del()
-  await knex('table_name').insert([
+  await knex('produtos').del()
+  await knex('produtos').insert([
     { "id": 1, "descricao": "Camiseta", "marca": "Nike", "preco": 19.99 },
     { "id": 2, "descricao": "Calça Jeans", "marca": "Levis", "preco": 49.99 },
     { "id": 3, "descricao": "Camisa Polo", "marca": "Adidas", "preco": 29.99 },
